@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JioType-Medium.ttf">
+            <string>JioType-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClockCollectionCell" id="gTV-IL-0wX" customClass="ClockCollectionCell" customModule="JioHospitality" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="714"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="714"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view hidden="YES" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BN3-s7-9N5">
+                        <rect key="frame" x="18.666666666666657" y="38.666666666666657" width="335.66666666666674" height="335.66666666666674"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BN3-s7-9N5" secondAttribute="height" multiplier="1:1" id="MEq-KS-jax"/>
+                        </constraints>
+                    </view>
+                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqz-mI-rrb" customClass="TimeDisplayView" customModule="JioHospitality" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="20" width="373" height="373"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dqz-mI-rrb" secondAttribute="height" multiplier="1:1" id="vnw-az-0vZ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDJ-Jd-hP7" userLabel="Zone-lable">
+                        <rect key="frame" x="12" y="403" width="349" height="29.333333333333314"/>
+                        <fontDescription key="fontDescription" name="JioType-Medium" family="JioType" pointSize="25"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIJ-bn-3dg" userLabel="Date-Lable">
+                        <rect key="frame" x="10" y="442.33333333333331" width="353" height="24.666666666666686"/>
+                        <fontDescription key="fontDescription" name="JioType-Medium" family="JioType" pointSize="21"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvM-St-0xv" userLabel="Time-Lable">
+                        <rect key="frame" x="10" y="477" width="353" height="24.666666666666686"/>
+                        <fontDescription key="fontDescription" name="JioType-Medium" family="JioType" pointSize="21"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PIJ-bn-3dg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="03l-j6-vmO"/>
+                <constraint firstItem="dqz-mI-rrb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="1sB-Ef-DBb"/>
+                <constraint firstAttribute="trailing" secondItem="PIJ-bn-3dg" secondAttribute="trailing" constant="10" id="81W-wx-76m"/>
+                <constraint firstAttribute="trailing" secondItem="dqz-mI-rrb" secondAttribute="trailing" id="D5P-Yl-ZfN"/>
+                <constraint firstItem="RDJ-Jd-hP7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Dvt-Mj-XGn"/>
+                <constraint firstItem="RDJ-Jd-hP7" firstAttribute="top" secondItem="dqz-mI-rrb" secondAttribute="bottom" constant="10" id="FQt-5B-4u2"/>
+                <constraint firstItem="BN3-s7-9N5" firstAttribute="centerX" secondItem="dqz-mI-rrb" secondAttribute="centerX" id="G8S-fk-gBw"/>
+                <constraint firstItem="BN3-s7-9N5" firstAttribute="centerY" secondItem="dqz-mI-rrb" secondAttribute="centerY" id="JcM-9Z-CrM"/>
+                <constraint firstItem="dqz-mI-rrb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MyB-hV-xCf"/>
+                <constraint firstItem="PIJ-bn-3dg" firstAttribute="top" secondItem="RDJ-Jd-hP7" secondAttribute="bottom" constant="10" id="S3X-Yq-dSQ"/>
+                <constraint firstAttribute="trailing" secondItem="KvM-St-0xv" secondAttribute="trailing" constant="10" id="Yeg-Js-Yzo"/>
+                <constraint firstItem="KvM-St-0xv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="h5t-uB-szj"/>
+                <constraint firstItem="BN3-s7-9N5" firstAttribute="width" secondItem="dqz-mI-rrb" secondAttribute="width" multiplier="0.9" id="iuP-J2-EPv"/>
+                <constraint firstAttribute="trailing" secondItem="RDJ-Jd-hP7" secondAttribute="trailing" constant="12" id="l7O-7V-zaa"/>
+                <constraint firstItem="KvM-St-0xv" firstAttribute="top" secondItem="PIJ-bn-3dg" secondAttribute="bottom" constant="10" id="uNE-ud-bDN"/>
+            </constraints>
+            <size key="customSize" width="373" height="714"/>
+            <point key="canvasLocation" x="408.39694656488547" y="215.49295774647888"/>
+        </collectionViewCell>
+    </objects>
+</document>
